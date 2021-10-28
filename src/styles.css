@@ -6,22 +6,60 @@ html, body {
   margin: 0;
   border: 0;
   padding: 0;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 main {
-  margin: auto;
-  width: 50%;
-  padding: 20px;
+  background-image: url(img/clown-lechia.jpg);
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  height: 100vh;
 }
 
-main > h1 {
-  text-align: center;
-  font-size: 3.5em;
+#welcome-modal .modal-content {
+  border-radius: 0;
 }
 
-main > h3 {
-  text-align: center;
-  /* font-size: 3.5em; */
-  letter-spacing: 5px;
+#welcome-modal .modal-header {
+  background-color: #25273A;
+  color: #fff;
+  padding: 5px 1rem;
+  border-radius: 0;
+}
+
+#welcome-modal .modal-header .modal-title i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+#welcome-modal .btn-close {
+  background: none;
+  color: #fff;
+  opacity: 1;
+  margin: -5px -15px 0 auto;
+}
+
+#welcome-modal .btn-close:hover {
+  opacity: 0.6;
+}
+
+#welcome-modal .btn-close:focus, #welcome-modal .btn-close:active {
+  outline: none;
+  box-shadow: none;
+}
+
+#welcome-modal .btn-close-modal {
+  float: right;
+}
+
+.modal-backdrop {
+  background-color: none !important;
+  background-image: url(img/witan-lechia.jpg);
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+.modal-backdrop.show {
+  opacity: 1 ;
 }
