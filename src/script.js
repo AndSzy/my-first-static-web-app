@@ -1,7 +1,13 @@
-const myModal = new bootstrap.Modal(document.getElementById('welcome-modal'));
+import { Table } from './modules/table.js';
 
-myModal.toggle();
+import * as Elements from './modules/elements.js';
+
+let playersTable = new Table;
 
 fetch('https://lechia-api.azurewebsites.net/players')
-  .then(response => response.json())
-  .then(players => console.log(players));
+.then(response => response.json())
+.then(players => {
+  playersTable.drawTable(players, Elements.tableEl);
+});
+
+
