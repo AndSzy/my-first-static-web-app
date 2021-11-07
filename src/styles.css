@@ -17,11 +17,16 @@ html, body {
   color: #fff;
 }
 
-/* .navbar {
-  background-color: #056838;
+section {
+  height: 100vh;
+}
+
+section.team {
+  background-color: #0d260e;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+section.team caption {
   color: #fff;
-} */
-
-main {
-
 }

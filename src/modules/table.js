@@ -7,8 +7,14 @@ class Table {
         const tableEl = document.createElement('table');
         const headEl = document.createElement('thead');
         const bodyEl = document.createElement('tbody');
+        const captionEl = document.createElement('caption');
 
         tableEl.classList.add('table');
+        tableEl.classList.add('table-light');
+        tableEl.classList.add('table-striped');
+        tableEl.classList.add('caption-top');
+
+        captionEl.innerText = 'Players';
 
         let headString = '';
         head.forEach((name) => {
@@ -28,6 +34,7 @@ class Table {
         });
         bodyEl.innerHTML = bodyString;
 
+        tableEl.appendChild(captionEl);
         tableEl.appendChild(headEl);
         tableEl.appendChild(bodyEl);
         element.appendChild(tableEl);
