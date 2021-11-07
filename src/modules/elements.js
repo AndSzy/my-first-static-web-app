@@ -1,3 +1,5 @@
-const tableEl = document.getElementById('table');
+let elements = {
+    tableEl: document.getElementById('table-container')
+}
 
-export { tableEl };
+export { elements };

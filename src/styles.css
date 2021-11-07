@@ -9,6 +9,19 @@ html, body {
   /* background-color: #fff; */
 }
 
+.bg-green-lechia {
+  background-color: #056838;
+}
+
+.navbar-toggler i {
+  color: #fff;
+}
+
+/* .navbar {
+  background-color: #056838;
+  color: #fff;
+} */
+
 main {
 
 }
