@@ -21,6 +21,36 @@ section {
   height: 100vh;
 }
 
+section.home .row {
+  overflow: hidden;
+  height: calc(100vh - 50px);
+}
+
+section.home .row .left, section.home .row .right {
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll; 
+}
+
+section.home .video-container {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+section.home .video-container:last-child {
+  padding-bottom: 300px;
+}
+
+section.home .video-container .video-title {
+  text-align: left;
+}
+
+
+section.home .video-container iframe {
+  width: 680px;
+  height: 400px;
+}
+
 section.team {
   background-color: #0d260e;
   font-size: 20px;
