@@ -38,7 +38,7 @@ section.home .video-container {
 }
 
 section.home .video-container:last-child {
-  padding-bottom: 300px;
+  padding-bottom: 60px;
 }
 
 section.home .video-container .video-title {
@@ -59,4 +59,19 @@ section.team {
 
 section.team caption {
   color: #fff;
+}
+
+@media only screen and (max-width: 1200px) {
+  section.home .video-container iframe {
+    width: 510px;
+    height: 300px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  section.home .video-container iframe {
+    width: 340px;
+    height: 200px;
+  }
 }
