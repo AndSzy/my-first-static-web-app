@@ -10,8 +10,8 @@ class Table {
         const captionEl = document.createElement('caption');
 
         tableEl.classList.add('table');
-        tableEl.classList.add('table-light');
-        tableEl.classList.add('table-striped');
+        // tableEl.classList.add('table-light');
+        // tableEl.classList.add('table-striped');
         tableEl.classList.add('caption-top');
 
         captionEl.innerText = 'Players';

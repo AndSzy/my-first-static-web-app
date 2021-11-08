@@ -2,7 +2,9 @@ import { Table } from './modules/table.js';
 
 import { elements } from './modules/elements.js';
 
-import { offsetScroll } from './modules/functions.js'
+import { offsetScroll } from './modules/functions.js';
+
+import { Video } from './modules/video.js';
 
 elements.teamLinkEl.addEventListener('click', () => {
   event.preventDefault();
@@ -15,6 +17,11 @@ elements.teamLinkEl.addEventListener('click', () => {
 
   window.scrollTo({top: y, behavior: 'smooth'});
 })
+
+let newVideo = new Video;
+
+newVideo.addVideo(elements.leftRowEl,'Lechia-Zaglebie 2:1', "https://streamable.com/e/7dcfze");
+newVideo.addVideo(elements.leftRowEl,'Lechia-Zaglebie 1:1', "https://streamable.com/e/jexsid");
 
 let playersTable = new Table;
 

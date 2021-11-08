@@ -13,9 +13,9 @@
 
   <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-green-lechia" id="lechia-nav">
     <div class="container-fluid">
-      <span class="navbar-brand ms-4">
+      <span class="navbar-brand">
         <img src="./img/logo2-lechia.png" alt="Lechia" width="60" height="60">
-        <span class="brand-text">Lechia-Gdansk.com</span>
+        <span class="brand-text d-md-none d-lg-inline">Lechia-Gdansk.com</span>
       </span>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
@@ -41,17 +41,21 @@
   <section class="home" id="home">
     <div class="container pt-4">
       <div class="row">
-        <div class="col-12 col-lg-8 left">
+        <div class="col-12 col-lg-8 left" id="left-row">
 
-          <div class="video-container">
+          <div class="video-section-header-holder">
+            <h1 class="video-section-header">Video</h1>
+          </div>
+
+          <!-- <div class="video-container">
             <h4 class="video-title">LGD - ZAG 2:1</h4>
             <iframe src="https://streamable.com/e/7dcfze" allowfullscreen></iframe>
-          </div>
+          </div> -->
 
-          <div class="video-container">
+          <!-- <div class="video-container">
             <h4 class="video-title">LGD - ZAG 1:1</h4>
             <iframe src="https://streamable.com/e/jexsid" allowfullscreen></iframe>
-          </div>
+          </div> -->
 
         </div>
 
@@ -66,7 +70,9 @@
   </section>
 
   <section class="team" id="team">
-    <div class="container" id="table-container"></div>
+    <div class="container" >
+      <div class="table-responsive" id="table-container"></div>
+    </div>
   </section>
 
   <section class="supporters" id="supporters">
