@@ -1,12 +1,12 @@
 class Video {
-    addVideo(element, title, link) {
+    addVideo(element, title, date, user, link) {
 
       let articleEl = document.createElement('article');
 
       articleEl.innerHTML = `
         <header class="mb-4">
         <h1 class="fw-bolder mb-1">${title}</h1>
-        <div class="text-muted fst-italic mb-2">Posted on November 11, 2021 by Kiki</div>
+        <div class="text-muted fst-italic mb-2">Posted on ${date} by ${user}</div>
         </header>
         <figure class="mb-4">
           <div class="iframe-container">
@@ -21,3 +21,6 @@ class Video {
 }
 
 export { Video }
+
+// need to add date, user
+// video_id | title | date | user | link 
