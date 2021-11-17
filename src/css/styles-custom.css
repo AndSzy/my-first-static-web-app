@@ -34,3 +34,11 @@ nav.navbar, footer {
 .team-container, .supporters-container {
   min-height: calc(100vh - 48px - 86px - 96px)
 }
+
+/* SUPPORTERS */
+
+.supporters-container img {
+  width:  100%;
+  height: 100%;
+  object-fit: cover;
+}
