@@ -3,12 +3,14 @@ class Video {
 
       let articleEl = document.createElement('article');
 
+      // articleEl.classList.add('mb-4')
+
       articleEl.innerHTML = `
         <header class="mb-4">
         <h1 class="fw-bolder mb-1">${title}</h1>
         <div class="text-muted fst-italic mb-2">Posted on ${date} by ${user}</div>
         </header>
-        <figure class="mb-4">
+        <figure>
           <div class="iframe-container">
             <iframe src=${link} allowfullscreen></iframe>
           </div>

@@ -11,6 +11,23 @@ nav.navbar, footer {
     letter-spacing: 1px;
 }
 
+/* HOME */
+
+.scroll, .scroll-twitter {
+  /* height: 300px; */
+  overflow-y: auto;
+  width: 100%;
+  padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+}
+
+.scroll article {
+  margin-bottom: 24px;
+}
+
+.scroll article:last-child {
+  margin-bottom: 200px;
+}
+
 .iframe-container {
     position: relative;
     overflow: hidden;
