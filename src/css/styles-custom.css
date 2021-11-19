@@ -72,6 +72,13 @@ nav.navbar, footer {
   object-fit: cover;
 }
 
+/* SPINNER */
+
+.spinner-border {
+  height: 4rem;
+  width: 4rem;
+}
+
 
 
 

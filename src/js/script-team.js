@@ -25,6 +25,8 @@ fetch('https://lechia-api.azurewebsites.net/players')
     } 
   })
 
+  document.getElementById('spinner-container').classList.add('d-none');
+
 
   playersTable.drawTable(goalkeepers, tableContentEl, ['First Name', 'Last Name', 'Position', 'Nationality'], 'Goalkeepers');
   playersTable.drawTable(defenders, tableContentEl, ['First Name', 'Last Name', 'Position', 'Nationality'], 'Defenders');
