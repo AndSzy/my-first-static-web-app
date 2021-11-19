@@ -13,19 +13,19 @@ nav.navbar, footer {
 
 /* HOME */
 
-.scroll, .scroll-twitter {
-  /* height: 300px; */
+/* Equal height */
+
+#tweets, #posts {
+  max-height: 200vh;
   overflow-y: auto;
-  width: 100%;
-  padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+  margin-bottom: 20px;
 }
 
-.scroll article {
-  margin-bottom: 24px;
-}
-
-.scroll article:last-child {
-  margin-bottom: 200px;
+/* add media query for mobile */
+@media only screen and (max-width: 992px) {
+  #tweets {
+    height: 100vh;
+  }
 }
 
 .iframe-container {
@@ -59,3 +59,7 @@ nav.navbar, footer {
   height: 100%;
   object-fit: cover;
 }
+
+
+
+
