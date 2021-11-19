@@ -47,9 +47,21 @@ nav.navbar, footer {
   }
 
 /* TEAM */
-
 .team-container, .supporters-container {
   min-height: calc(100vh - 48px - 86px - 96px)
+}
+
+.team-container #table-content table {
+  table-layout: fixed;
+}
+.team-container #table-content table td {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .team-container #table-content table {
+    table-layout: auto;
+  }
 }
 
 /* SUPPORTERS */
