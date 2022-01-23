@@ -18,5 +18,7 @@ fetch('https://lechia-api.azurewebsites.net/videos')
 });
 
 
+newVideo.addVideo(postsEl, 'test', 'today', 'kiki', 'https://www.youtube.com/embed/j7CBG34zwxg');
+
 
 
